@@ -117,3 +117,17 @@ hr {
     padding-top: 5%;
     /* border-radius: 5px; */
 }
+
+/* *******************************************************
+
+            MEDIA QUERIES
+
+*********************************************************/
+
+@media (max-width: 768px) {
+    /*  removes bootstrap width default for xs and sm screens */
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+}

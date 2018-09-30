@@ -5,6 +5,12 @@ body {
     color: #777;
 }
 
+/* *******************************************************
+
+            NAVBAR STYLING
+
+*********************************************************/
+
 .navbar {
     /* Setting background */
     background: #fff;
@@ -21,7 +27,7 @@ body {
 
 .navbar-brand,
 h3 {
-    /* setting font for Name and content header */
+    /* setting font for Name and Content header */
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -30,6 +36,12 @@ h3 {
     color: #777;
     font-size: 20px;
 }
+
+/* *******************************************************
+
+            CONTENT CONTAINER STYLING
+
+*********************************************************/
 
 h3 {
     /* font color for content title */
@@ -49,11 +61,15 @@ hr {
     border-radius: 90%;
 }
 
-.chad {
-    /* restrict size of image */
-    max-height: 200px;
-    max-height: 200px;
-    margin: 20px;
+/* *******************************************************
+
+            FOOTER STYLING
+
+*********************************************************/
+
+.spacer-div {
+    /* need this spacer to move content up so it's not hidden behind the fixed footer */
+    height: 40px;
 }
 
 .footer {
@@ -62,12 +78,49 @@ hr {
     border-top: 8px solid #4aaaa5;
     background: #666;
     /* position  */
+    position: fixed;
+    bottom: 0;
+}
+
+/* *******************************************************
+
+            INDEX STYLING
+
+*********************************************************/
+
+.chad {
+    /* restrict size of image */
+    max-height: 200px;
+    max-height: 200px;
+    margin: 20px;
+}
+
+/* *******************************************************
+
+            PORTFOLIO STYLING
+
+*********************************************************/
+
+.portfolio-thumbnail {
+    /* position relative for absolute banner */
     position: relative;
 }
 
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
+.caption {
+    /* Positioning the caption over the image near the bottom */
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 15px;
+    color: #fff;
+    background: #4aaaa5;
+    padding-top: 5%;
+    /* border-radius: 5px; */
 }
+
+/* *******************************************************
+
+            CONTACT STYLING
+
+*********************************************************/
+
